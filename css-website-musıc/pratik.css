@@ -1,0 +1,56 @@
+.box {
+  width: 300px;
+  height: 300px;
+  /* padding kutunun içerisindeki measfe ayarlaması */
+  padding: 10px;
+  /* margin kutunun dışı ile diger kutular arsındaki mesafe ayarlaması */
+  margin: 10px;
+  /* float özlliği kutularım yanyana dizilmesini sağlar */
+  float: left;
+  /* clear kutuların yanındakilerini temizle demek */
+}
+.clear {
+  clear: both;
+}
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+/* .container çalışması */
+/* asagıda container içine iki tane kutu oluşturduk */
+/* margin left ve right auto seçildiğinde iki taraftan otomatik tam ortalar */
+
+.container {
+  margin: 50px auto 0;
+  width: 1000px;
+}
+/* asagıdaki özellikte conteinerin içinde 3 tane card, bir tane left bar var */
+
+.left-bar {
+  width: 200px;
+  float: left;
+}
+
+.content {
+  width: 800px;
+  float: left;
+}
+/* card özelliğinde conteinerin içindeki kapladığı alanın %33 olmasını istedik */
+/* ancak padding %5 sag ve sol iki taraftan %10 yapar, 3% de margin var o yüzden */
+/* width değerine %20 yazdık */
+.card {
+  width: 20%;
+  float: left;
+  padding: 5%;
+  margin-right: 3%;
+  background-color: rgb(223, 210, 210);
+  border-radius: 10px;
+}
