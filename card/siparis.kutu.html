@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+      }
+      .siparis {
+        display: flex;
+        flex-flow: row wrap;
+        width: 60%;
+      }
+      .kutu {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #fff;
+        border: 1px solid #b2b2b2;
+        border-radius: 2px;
+        margin: 5px;
+        padding: 5px;
+        width: 250px;
+        height: 500px;
+        text-align: center;
+      }
+      .kutu img {
+        align-self: flex-start;
+        width: 100%;
+        height: 60%;
+        transition: transform 0.3s ease-out;
+      }
+      .kutu img:hover {
+        transform: scale(1.2);
+      }
+      .kutu p {
+        font-size: 16px;
+      }
+      .btn {
+        align-self: flex-end;
+        cursor: pointer;
+        border: 1px solid #eb6440;
+        border-radius: 2px;
+        transition-duration: 0.3s;
+        text-decoration: none;
+        color: #eb6440;
+        font-size: 16px;
+        padding: 3px 30px;
+      }
+      .btn:hover {
+        background-color: #eb6440;
+        color: #fff;
+      }
+
+      .left-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 20%;
+        border: 2px solid #b2b2b2;
+        border-radius: 2px;
+        padding: 5px;
+      }
+      .left-kutu {
+        margin: 5px;
+        width: 100%;
+        flex-grow: 1;
+        background-color: #eb6440;
+      }
+      .kutu-1 {
+        order: 4;
+      }
+      .kutu-2 {
+        order: 3;
+      }
+      .kutu-3 {
+        order: 2;
+      }
+      .kutu-4 {
+        order: 1;
+      }
+      .right-container {
+        width: 20%;
+        background-color: #b2b2b2;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .siparis {
+        display: flex;
+        justify-content: center;
+      }
+      header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+
+      .butonlar a {
+        font-size: 16px;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0 5px;
+        padding-bottom: 2px;
+        border-bottom: 2px solid #eff5f5;
+      }
+      .butonlar a:hover {
+        color: #eb6440;
+        border-bottom: 2px solid #eb6440;
+      }
+
+      .right-container img {
+        width: 75%;
+        height: 300px;
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="butonlar">
+        <a href="">KADIN</a>
+        <a href="">ERKEK</a>
+        <a href="">KOZMETİK</a>
+        <a href="">MOBİLYA</a>
+        <a href="">ELEKTRONİK</a>
+        <a href="">SÜPERMARKET</a>
+        <a href="">ANNE</a>
+        <a href="">AYAKKABI</a>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="left-container">
+        <div class="left-kutu kutu-1">
+          <h2>KUTU 1</h2>
+        </div>
+        <div class="left-kutu kutu-2">
+          <h2>KUTU 2</h2>
+        </div>
+        <div class="left-kutu kutu-3">
+          <h2>KUTU 3</h2>
+        </div>
+        <div class="left-kutu kutu-4">
+          <h2>KUTU 4</h2>
+        </div>
+      </div>
+      <div class="siparis">
+        <div class="kutu">
+          <img src="arora1.webp" alt="" />
+          <p>
+            Arora Max-t 150 Cc Euro 5 Scooter Motorsiklet (akıllı Telefon Ile
+            Tam Bağlantılı) Max-T
+          </p>
+          <p>2.339 TL</p>
+          <a href="" class="btn">Sepete Ekle</a>
+        </div>
+        <div class="kutu">
+          <img src="arora2.webp" alt="" />
+          <p>
+            Arora Cappucıno 50 Cc Scooter (euro 5 - 2022 Model) CAPPUCINO 50
+          </p>
+          <p>39.990 TL</p>
+          <a href="" class="btn">Sepete Ekle</a>
+        </div>
+        <div class="kutu">
+          <img src="arora3.webp" alt="" />
+          <p>Arora Cappucıno 50 Cc Scooter CAPPUCINO 50</p>
+          <p>43.990 TL TL</p>
+          <a href="" class="btn">Sepete Ekle</a>
+        </div>
+        <div class="kutu">
+          <img src="arora4.webp" alt="" />
+          <p>
+            Arora Marka Xlt 48 A Navara Üç Tekerlekli Elektrikli Moped Motor
+            Brandası 1. Kalıte OTONT01100723
+          </p>
+          <p>155 TL</p>
+          <a href="" class="btn">Sepete Ekle</a>
+        </div>
+        <div class="kutu">
+          <img src="arora5.webp" alt="" />
+          <p>Arora Casper New E-scooter Pembe GEZGİN-68186</p>
+          <p>14.457 TL</p>
+          <a href="" class="btn">Sepete Ekle</a>
+        </div>
+        <div class="kutu">
+          <img src="arora6.webp" alt="" />
+          <p>Arora Ars200 Touring 200 Cc Motorsiklet ARS200</p>
+          <p>55.990 TL</p>
+          <a href="" class="btn">Sepete Ekle</a>
+        </div>
+        <div class="kutu">
+          <img src="arora7.webp" alt="" />
+          <p>
+            Arora Berlin E-bıke Katlanabilir Kalın Tekerlekli Elektrikli
+            Bisiklet BERLİN E-BIKE
+          </p>
+          <p>14.490 TL</p>
+          <a href="" class="btn">Sepete Ekle</a>
+        </div>
+        <div class="kutu">
+          <img src="arora8.webp" alt="" />
+          <p>
+            Arora Zrx 200 Euro 5 Otomatik Vites Scooter (2022 Model) ZRX 200
+          </p>
+          <p>56.990 TL</p>
+          <a href="" class="btn">Sepete Ekle</a>
+        </div>
+      </div>
+      <div class="right-container"></div>
+    </div>
+  </body>
+</html>
