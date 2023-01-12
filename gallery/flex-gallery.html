@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=A_KoH6s4jMZoL69nGNJr3w_om7PjsP0_MfRHWQCA0ZvymrU8gv35t0M9_rxfKWxwknMQMgE1CQwRIvpHO7xFlLiALjP9AzxRIdO_iSOXQfJKuzFqlFPsSnXc3p3ud9ev0zVU_Gb5zFlfuyYWxns2ayRIwW41KcCr3D9uFLE2DN2dOnw8ENQwRt2KX3aLtHTsynlONdrI75Md79mxk8zrZdEWcstAzZN3DYACfr-k1mN87RT04ZnZOOd6DSE0bwIkwH_TzaH5tKYO0UVF8bCXHlU72hFPHRHv7M1jt-L5Q7bJlB30_euLe1wgb0c8ifiDPn1HmMCDnl_YmgP-X5JHyoqu8lj8GzGq0j1kAdQbvJhAlPJHzuGxNzDxzZsLSVXjlJ-ramFojuRvrOPFBSbjj9rYSPec6ziwlSV9ik5fAtedmviNvtKxl-_esicp6Y1qhVPVLoOC1GmFP6l2mHtmjHB7kDrMDSvLlDK54B6p0jweE2_zYyxKjEr62DGwMa2LjZAs6nVdVvxHsoMBgrAc3VDjmrbk1uXVKg-FdczWSsVkpWCyuazkhiHrqWRnF2EO1fbNvHgTrIBEHij3DGbGwkADuNc0mKWAVX8A3UP4UFNjONCjwIV9q--LCQJ9mcEgfs-1BmQ4hnlo1-F6FsHb8PfCIbmj1bql-p6-jBoc5iSwAq73qhkXNnxJoU7yamdhOhxcq62N1RrxemMZ5QC2r-K2y9TVXP9oekMI4yepPKGpe7ZFbgwO5MzpKHhSau7KnDWzk3xrTfAtN4w12AtFbA" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9hdHQtYy51ZGVteWNkbi5jb20vMjAyMi0wMS0xOF8xNy0zMy0zOS05MTliOTFjMDMwOWVlZWRkZmU4ODJkMzNhN2Q5ZTk5Yi9vcmlnaW5hbC5odG1sP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249YXR0YWNobWVudCUzYiUyMGZpbGVuYW1lJTNkZmxleC1nYWxsZXJ5Lmh0bWwmRXhwaXJlcz0xNjcwMTc4MTg0JlNpZ25hdHVyZT1sQ29iYzN-R3NsYk1Nd08wQ04tWHhZYXVwRH5-YXlSUjgwVXUyQ2cwZDQ5R25vOW1IRn5WNE5rMUFFdWNVcml0YUVMb0U5fkJ5Tm1STG5nMH42VHJ4dnR1TG94S3hHSXNCRUswfi1ac25qRG00YW55NkdCZG1kLWk0bVpvWUtGZVpWRW04SlN2VlVESW4zekt-R0pYaTVMRmdEWm5tSH42bVd3QkZvfkFDRUNVT1ZwTVRTLTNKOHVrU1RUTW1CQXNNNmNZYjVBbU83dFBhUllaNGdKYXVGRTdnZHJqb1dDYmM0WmV2V1JsMmh2Y3V6V3FPZlVqT3FTUzZsVXBVdU1jNGpkd2dybE56ZzllTEQ2OElRMnlBeFd1cUU1dkdwMXBReEl3MEJGTEVFbWhRZHZHVzlERmhacDBKOTdlV1hNWG5YM0N2QlFyUTB5emRwSlR5SVF6clFfXyZLZXktUGFpci1JZD1BUEtBSVRKVjc3V1M1WlQ3MjYyQQ"/><style>
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 3rem;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .gallery div {
+            flex-grow: 1;
+            margin: 3px;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            transition: transform .3s ease-out;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h1>Image Gallery</h1>
+
+    <div class="gallery">
+        <div>
+            <img src="https://picsum.photos/300/200?random=1">
+        </div>
+        <div>
+            <img src="https://picsum.photos/400/300?random=2">
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=3">
+        </div>
+        <div>
+            <img src="https://picsum.photos/500/500?random=4">
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=5">
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/400?random=6">
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=7">
+        </div>
+    </div>
+
+
+</body>
+</html>
