@@ -1,0 +1,362 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css);
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+#body {
+  background: #fff;
+  margin: 0;
+}
+.main-header {
+  background-color: #256d85;
+  padding: 5px 20px;
+  width: 100%;
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.baslik {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #b0c4de;
+
+  position: relative;
+  top: 25px;
+}
+#backtotop {
+  position: relative;
+  top: auto;
+  left: 5px;
+  font-size: 15px;
+}
+#backtotop i {
+  color: #dff6ff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+#backtotop i:hover {
+  color: #06283d;
+}
+#icon {
+  color: #dff6ff;
+  font-size: 18px;
+  text-align: right;
+  padding-left: 25px;
+  margin: auto;
+  transition: color 0.3s;
+}
+.main-nav {
+  display: inline-block;
+
+  text-align: right;
+}
+.main-button {
+  text-align: right;
+  display: none;
+}
+.main-button a {
+  text-decoration: none;
+  color: #dff6ff;
+  padding: 15px 15px 5px 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+  transition-duration: 0.3s;
+}
+.main-button a:hover {
+  background: #06283d;
+  color: #dff6ff;
+}
+
+.main-baslik {
+  display: inline-block;
+}
+#icon-text {
+  color: #dff6ff;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 5px;
+  margin: auto;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+#icon-text:hover {
+  color: #06283d;
+}
+.banner {
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  background-color: #06283d;
+  padding: 5px 0px 0px 50px;
+}
+/* .banner-left {
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .img-profil {
+    display: inline-block;
+    width: 55%;
+    text-align: right;
+    vertical-align: middle;
+  } */
+.kutular {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+.kutu {
+  width: 330px;
+  height: 335px;
+  display: inline-block;
+  background-color: #edf5f7;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  margin: 15px 15px 15px 15px;
+  /* border-top: 3px solid #256d85; */
+  transition: 0.3s;
+  border: 1px solid #06283d;
+}
+.kutu:hover {
+  transform: translateY(-10px);
+}
+.kutu img {
+  /* border-radius: top 10px; */
+  /* background-size: cover; */
+  /* margin-top: 1px; */
+  border-radius: 10px;
+  width: 100%;
+  height: 60%;
+}
+/* .kutu img {
+  transition: 1s;
+}
+.kutu img:hover {
+  transform: scale(1.5);
+} */
+.btn {
+  font-size: 16px;
+  padding: 5px;
+  background: #256d85;
+  border: 1px solid #06283d;
+  color: #dff6ff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition-duration: 0.6s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #06283d;
+}
+.footer-alt {
+  padding-top: 10px;
+  font-size: 30px;
+  text-align: center;
+  background: #dff6ff;
+}
+.footer-alt p {
+  font-size: 24px;
+  display: inline-block;
+}
+
+#backto {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+}
+#backto i {
+  color: #256d85;
+  font-size: 30px;
+  transition: color 0.6s;
+}
+#backto i:hover {
+  background: #fff;
+  color: #06283d;
+}
+
+.showcase {
+  background: linear-gradient(
+      to bottom,
+      rgba(177, 226, 231, 0.2),
+      rgba(157, 218, 225, 0.2)
+    ),
+    url(../image/showcasebg2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 35vh;
+  width: 100%;
+  position: relative;
+}
+.mykimdir {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  background: rgba(116, 191, 216, 0.3);
+  padding: 10px;
+  width: 60%;
+  border-radius: 10px;
+}
+@media (min-width: 576px) {
+  .baslik {
+    font-size: 30px;
+  }
+  .showcase {
+    height: 35vh;
+  }
+  .mykimdir {
+    font-size: 22px;
+    padding: 11px;
+  }
+  .kutu {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .baslik {
+    font-size: 33px;
+  }
+  .showcase {
+    height: 40vh;
+  }
+  .mykimdir {
+    font-size: 23px;
+    padding: 13px;
+  }
+}
+
+@media (min-width: 992px) {
+  .baslik {
+    font-size: 35px;
+  }
+  .main-button {
+    display: inline-block;
+    width: 60%;
+  }
+  .main-baslik {
+    display: none;
+  }
+  .showcase {
+    height: 45vh;
+  }
+  .mykimdir {
+    font-size: 25px;
+    padding: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .baslik {
+    font-size: 37px;
+  }
+  .main-button {
+    display: inline-block;
+    width: 60%;
+  }
+
+  .main-nav {
+    width: 35%;
+  }
+  .main-baslik {
+    display: none;
+  }
+  .showcase {
+    height: 50vh;
+  }
+  .mykimdir {
+    font-size: 27px;
+    padding: 15px;
+  }
+}
+@media (min-width: 1400px) {
+  .baslik {
+    font-size: 40px;
+  }
+  .main-button {
+    display: inline-block;
+    width: 60%;
+  }
+  .main-baslik {
+    display: none;
+  }
+  .main-nav {
+    width: 35%;
+  }
+  .showcase {
+    height: 60vh;
+  }
+  .mykimdir {
+    font-size: 30px;
+    padding: 20px;
+  }
+}
+
+/* .slider {
+  display: inline-block;
+  margin-top: 40px;
+  width: 50%;
+  height: 300px;
+  background: linear-gradient(
+      to bottom,
+      rgba(178, 225, 230, 0.2),
+      rgba(159, 217, 230, 0.2)
+    ),
+    url(../image/resim3.jpg);
+  background-position: center left;
+  background-size: cover;
+}
+.text {
+  display: inline-block;
+  margin-top: 40px;
+  width: 50%;
+  height: 300px;
+  padding: 15px 15px 5px 15px;
+  vertical-align: top;
+  background-color: #edf5f7;
+}
+.text h2 {
+  font-size: 40px;
+  margin: 5px;
+}
+.text p {
+  font-size: 16px;
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+}
+.text img {
+  width: 175px;
+  display: inline-block;
+  margin-bottom: 10px;
+} */
+
+/* .text a {
+  color: #dff6ff;
+  background-color: #256d85;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 5px 10px;
+  vertical-align: bottom;
+}
+.text a:hover {
+  background: #06283d;
+  color: #dff6ff;
+} */

@@ -1,0 +1,84 @@
+.signup-page {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.signup-title {
+  text-align: center;
+  font-size: 30px;
+  color: #2e4c6d;
+}
+
+.signup-form {
+  width: 300px;
+  margin: auto;
+}
+
+@media (min-width: 576px) {
+  .signup-form {
+    width: 400px;
+    margin: auto;
+  }
+}
+.signup-form label,
+.signup-form input:not([type="checkbox"]),
+.signup-form select {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.signup-form input[type="checkbox"],
+.signup-form input[type="checkbox"] + label {
+  display: inline-block;
+  width: auto;
+  margin-top: 15px;
+}
+
+.signup-form button[type="submit"] {
+  display: block;
+  margin-top: 15px;
+}
+
+.signup-form input:not([type="checkbox"]),
+.signup-form select {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+}
+
+.signup-form input:not([type="checkbox"]):focus,
+.signup-form select:focus {
+  outline: none;
+  background-color: #256d85;
+  border: 1px solid #2e4c6d;
+  color: #fff;
+}
+
+.signup-form input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #2e4c6d;
+  vertical-align: bottom;
+  border-radius: 50%;
+}
+
+.signup-form input[type="checkbox"]:hover {
+  background: #256d85;
+}
+
+.signup-form input[type="checkbox"]:checked {
+  background: #2e4c6d;
+}
+/* .kayitol {
+  color: #dff6ff;
+  background-color: #256d85;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.kayitol:hover {
+  background: #fff;
+  color: #2e4c6d;
+} */
